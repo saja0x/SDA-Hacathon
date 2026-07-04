@@ -1,57 +1,44 @@
-# Full-Stack Auth Demo: JWT + RBAC
+Code Cortex 🧠⚖️
+Code Cortex is an AI-powered legal contract analysis platform utilizing Anthropic's Claude and RAG (Retrieval-Augmented Generation). The project aims to simplify reading complex contracts, extracting key clauses, and analyzing potential legal risks.
 
-A minimal example of token-based authentication across a full stack:
+✨ Key Features
+🔐 Authentication & RBAC: Secure user and lawyer accounts with role-based access control.
+📄 AI Contract Analysis: Upload a contract and ask direct questions using the built-in RAG engine.
+💬 Interactive Community: A dedicated space to share contract experiences and advice (available for registered users).
+👨‍⚖️ Lawyer Directory: Browse certified lawyers and contact them directly via WhatsApp.
+📱 Modern UI: Responsive design and intuitive user experience built with the latest web technologies.
+🛠️ Tech Stack
+Frontend: React.js + Vite + React Router
+Backend: FastAPI + SQLite (SQLAlchemy) + JWT Authentication
+AI Integration: Anthropic Claude API + RAG Engine (Sentence Transformers & ChromaDB)
+🚀 How to Run (Local Development)
+1. Backend Setup
+Open a terminal and navigate to the backend directory:
 
-- **Backend:** FastAPI + SQLAlchemy ORM (SQLite) + Pydantic + PyJWT, served by Uvicorn
-- **Frontend:** React (Vite) + react-router-dom with `BrowserRouter` and protected routes
+cd Hacathon/backend
 
-Features, on purpose, are limited to exactly three things:
+# Activate the virtual environment (if available)
+.venv\Scripts\activate.bat
 
-1. Register / log in with a JWT access token
-2. A protected page any logged-in user can see (`/dashboard`)
-3. An admin-only page enforced by role-based access control (`/admin`)
-
-## Running it
-
-Two terminals.
-
-**Backend** (http://localhost:8000):
-
-```
-cd backend
+# Install required packages
 pip install -r requirements.txt
-uvicorn main:app --reload
-```
 
-**Frontend** (http://localhost:5173):
+# Run the server
+uvicorn main:app --reload --port 8000
+The backend will be available at: http://localhost:8000
 
-```
-cd frontend
+2. Frontend Setup
+Open a new terminal and navigate to the frontend directory:
+
+cd Hacathon/frontend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
-```
+The application will be available at: http://localhost:5173
 
-## Trying the RBAC demo
-
-1. Register an account with role **user** -- you can see `/dashboard` but get redirected away from `/admin` (and the API returns 403 if called directly).
-2. Log out, register a second account with role **admin** -- the Admin link appears and `/admin` lists every registered user.
-
-The role dropdown at registration is for classroom convenience only; a real app would never let users choose their own role.
-
-## Where to look
-
-| Concept | File |
-| --- | --- |
-| Engine / session / `get_db` dependency | `backend/database.py` |
-| ORM model (the `users` table) | `backend/models.py` |
-| Pydantic request/response schemas | `backend/schemas.py` |
-| Hashing, JWT, `get_current_user`, `require_admin` | `backend/security.py` |
-| App setup, CORS, router wiring | `backend/main.py` |
-| Public routes (register, login) | `backend/routes/auth.py` |
-| Protected routes (`/users/me`, `/users/profile`) | `backend/routes/users.py` |
-| Admin-only routes (`/admin/users`, `/admin/stats`) | `backend/routes/admin.py` |
-| Auth state shared via context | `frontend/src/AuthContext.jsx` |
-| Frontend route guard | `frontend/src/components/ProtectedRoute.jsx` |
-| Router setup | `frontend/src/App.jsx` |
-
-The API also self-documents at http://localhost:8000/docs once the backend is running.
+📂 Project Structure
+Hacathon/backend/: Contains the FastAPI application, SQLite database (app.db), and the AI engine (rag_engine.py).
+Hacathon/frontend/: Contains the React UI, components, routing, and styles.
