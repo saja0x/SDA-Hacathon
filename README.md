@@ -121,7 +121,7 @@ App runs at `http://localhost:5173`
 
 Built at the **Saudi Digital Academy Hackathon**
 
-| Name  Team
+  Team :
 | Saja Alkhalaf 
 | Ramah Alharbi
 | Sarah Alowjan
