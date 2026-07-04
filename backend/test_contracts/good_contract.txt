@@ -1,0 +1,44 @@
+Freelance Development Agreement
+
+Parties:
+Client: TechCorp LLC (Commercial Registration No. 1010123456, Riyadh)
+Freelancer: Ahmed Ali (National ID: 1234567890, Email: ahmed@email.com)
+
+1. Scope of Work
+Freelancer will develop an e-commerce website strictly per the attached Specifications Document (Appendix A).
+Any changes to scope require a signed written Change Order. Each approved change order adds to the project fee and timeline.
+
+2. Payment
+Total fee: 15,000 SAR.
+- 50% deposit (7,500 SAR) due upon contract signing before work begins.
+- 50% balance (7,500 SAR) due within 7 days of final delivery acceptance.
+Invoices unpaid after 7 days incur a 2% monthly late fee on the outstanding balance.
+Freelancer may suspend work if payment is more than 14 days overdue.
+
+3. Timeline
+Estimated delivery: 6 weeks from receipt of deposit.
+Delays caused by client (late feedback, missing assets) extend the deadline by equivalent time.
+Freelancer will provide weekly progress updates.
+
+4. Revisions
+Two (2) rounds of revisions included within the agreed scope.
+Additional revision rounds: 750 SAR per round, invoiced separately.
+
+5. Intellectual Property
+All intellectual property rights transfer to the client upon receipt of full final payment.
+Until full payment is received, all rights remain with the Freelancer.
+Freelancer retains the right to display the completed work in their portfolio and CV.
+
+6. Confidentiality
+Freelancer agrees to keep client business information confidential for 2 years after contract end.
+This clause does not prevent Freelancer from listing the client name and project type in their portfolio.
+
+7. Termination
+Either party may terminate with 7 days written notice.
+Upon termination, client must pay for all work completed to date within 5 business days.
+If client terminates without cause after work has begun, a 20% kill fee applies on the remaining balance.
+
+8. Dispute Resolution
+Parties agree to attempt good-faith negotiation for 14 days before escalating.
+Unresolved disputes will be referred to the Saudi Center for Commercial Arbitration (SCCA), Riyadh.
+This agreement is governed by Saudi Civil Transactions Law (نظام المعاملات المدنية).

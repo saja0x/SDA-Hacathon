@@ -1,0 +1,20 @@
+# ===== Backend (Auth + API) =====
+fastapi==0.115.12
+uvicorn==0.34.2
+sqlalchemy==2.0.40
+pydantic[email]>=2.9.2,<3.0.0
+PyJWT==2.10.1
+bcrypt==4.3.0
+anthropic
+pymupdf
+python-dotenv
+python-multipart
+
+# ===== RAG Engine =====
+sentence-transformers
+chromadb
+openai
+nltk
+numpy
+torch
+transformers
